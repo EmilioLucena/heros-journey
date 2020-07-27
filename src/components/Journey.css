@@ -5,11 +5,22 @@
   margin-top: 40px;
 }
 
-.Journey-Box {
-  background-color: blueviolet;
-  width: 400px;
-  height: 400px;
+.Journey-Description-1 {
   position: fixed;
-  top: 200px;
-  left: 460px;
+  top: 575px;
+  left: 45px;
+  width: 720px;
+  height: 250px;
+  border: 1px solid lightslategrey;
+  border-radius: 5px;
+}
+
+.Journey-Description-2 {
+  position: fixed;
+  top: 575px;
+  left: 500px;
+  width: 720px;
+  height: 250px;
+  border: 1px solid lightslategrey;
+  border-radius: 5px;
 }

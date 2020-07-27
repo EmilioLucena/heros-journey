@@ -22,6 +22,7 @@ export default function Journey({ journeys, image, areas }) {
     setQuadrant(area.quadrant);
   };
 
+  const descriptionClass = "Journey-Description-" + quadrant;
   return (
     <div className="Journey">
       <ImageMapper
@@ -32,13 +33,18 @@ export default function Journey({ journeys, image, areas }) {
         onMouseEnter={(area) => enterArea(area)}
       />
       {inside && (
-        <StepCard
-          course={entry.course}
-          name={entry.name}
-          step={entry.step}
-          stage={entry.stage}
-          quadrant={quadrant}
-        />
+        <>
+          <StepCard
+            course={entry.course}
+            name={entry.name}
+            step={entry.step}
+            stage={entry.stage}
+            quadrant={quadrant}
+          />
+          <div style={{ padding: "5px" }} className={descriptionClass}>
+            {entry.description}
+          </div>
+        </>
       )}
     </div>
   );
