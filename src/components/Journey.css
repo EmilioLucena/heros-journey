@@ -1,0 +1,15 @@
+.Journey {
+  width: 704px;
+  height: 528px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.Journey-Box {
+  background-color: blueviolet;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  top: 200px;
+  left: 460px;
+}
